@@ -5,7 +5,7 @@
 
 #include <pcre.h>
 
-static const char* REGEX = "^\\[(?<date>[0-9\\- \\:]+)\\] \\((?<level>[a-z]+)\\)(?: <thread (?<thread>[0-9a-f]+)>)? \\[(?<component>[a-zA-Z0-9]+)\\] (?<message>.+)$";
+static const char* REGEX = "^\\[(?<date>[0-9\\- \\:]+)\\] \\((?<level>[a-z]+)\\)(?: <thread (?<thread>[0-9a-f]+)>)? \\[(?<component>[^\\]]+)\\] (?<message>.+)$";
 static pcre* re;
 static pcre_extra* re_extra;
 
