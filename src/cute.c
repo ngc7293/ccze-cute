@@ -17,8 +17,9 @@ struct level_color {
 static struct level_color levels[] = {
     { CCZE_COLOR_STATIC_BLACK, "debug" },
     { CCZE_COLOR_STATIC_WHITE, "info" },
-    { CCZE_COLOR_STATIC_YELLOW, "warning" },
-    { CCZE_COLOR_STATIC_RED, "error" },
+    { CCZE_COLOR_STATIC_BOLD_YELLOW, "warn" },
+    { CCZE_COLOR_STATIC_BOLD_YELLOW, "warning" },
+    { CCZE_COLOR_STATIC_BOLD_RED, "error" },
     { 0, NULL }
 };
 
